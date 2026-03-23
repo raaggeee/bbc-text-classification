@@ -1,0 +1,2 @@
+data_ingestion:
+  test_split: 0.2

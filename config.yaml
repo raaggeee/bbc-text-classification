@@ -1,0 +1,9 @@
+data_ingestion:
+  path: data/raw
+
+data_preprocessing:
+  path: data/interim
+
+feature_engineering:
+  path: data/external
+
