@@ -1,6 +1,7 @@
 import pandas as pd
 from utils import open_yaml, open_df, save_df
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.preprocessing import LabelEncoder
 import os
 
 def get_yaml_content(yaml_content):
@@ -11,10 +12,14 @@ def get_yaml_content(yaml_content):
 
 def apply_feature_engineering(train_df, test_df):
     tfidf = TfidfVectorizer()
+    label = LabelEncoder()
+    
     X_train = train_df.iloc[:, :-1]
     y_train = train_df.iloc[:, -1]
+    y_train = label.fit_transform(y_train)
     X_test = test_df.iloc[:, :-1]
     y_test = test_df.iloc[:, -1]
+    y_test = label.fit_transform(y_test)
 
     X_train = tfidf.fit_transform(X_train)
     X_test = tfidf.transform(X_test)
