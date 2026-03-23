@@ -1,9 +1,11 @@
 data_ingestion:
-  path: data/raw
+  path: "data/raw"
 
 data_preprocessing:
-  path: data/interim
+  data_path: "data/raw"
+  save_path: "data/interim"
 
 feature_engineering:
-  path: data/external
+  data_path: "data/interim"
+  save_path: "data/external"
 
