@@ -9,3 +9,10 @@ feature_engineering:
   data_path: "data/interim"
   save_path: "data/external"
 
+model_train:
+  data_path: "data/external"
+
+model_eval:
+  data_path: "data/external"
+  model_metrics: "metrics"
+

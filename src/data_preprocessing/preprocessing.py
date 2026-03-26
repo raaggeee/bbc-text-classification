@@ -1,11 +1,29 @@
 import numpy as np
 import os
-from utils import open_df, open_yaml, save_df
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.stem.porter import PorterStemmer
 import string
 import re
+import yaml
+import os
+import pandas as pd
+
+def open_yaml(file_path):
+    with open(file_path, "r") as f:
+        yaml_file = yaml.safe_load(f)
+
+    return yaml_file
+
+def open_df(file_path):
+    df = pd.read_csv(file_path)
+    return df
+
+def save_df(file_path, filename, df):
+    os.makedirs(file_path, exist_ok=True)
+    save_path = os.path.join(file_path, filename)
+    df.to_csv(save_path, index=False)
+    return True
 
 def remove_punc(text):
     punc = string.punctuation
@@ -20,8 +38,8 @@ def remove_url(text):
     return pattern.sub(r'', text)
 
 def remove_number(text):
-    remove_number = [i for i in text if i.isdigit()]
-    return " ".join(remove_number)
+    remove_number = [i for i in text if not i.isdigit()]
+    return "".join(remove_number)
 
 def handling_stopwords(text):
     new_text = []
@@ -33,7 +51,7 @@ def handling_stopwords(text):
         else:
             new_text.append(word)
 
-    return " ".join(new_text)
+    return "".join(new_text)
 
 def lemmatization(text):
     wordnet = WordNetLemmatizer()
@@ -54,13 +72,13 @@ def stemming(text):
     return " ".join(text)
 
 def apply_preprocessing(df):
-    df["data"] = df["data"].apply(lambda x: remove_punc(x))
-    df["data"] = df["data"].apply(lambda x: remove_number(x))
-    df["data"] = df["data"].apply(lambda x: remove_html(x))
-    df["data"] = df["data"].apply(lambda x: remove_url(x))
-    df["data"] = df["data"].apply(lambda x: handling_stopwords(x))
-    df["data"] = df["data"].apply(lambda x: lemmatization(x))
-    df["data"] = df["data"].apply(lambda x: stemming(x))
+    df["data"] = df["data"].apply(remove_punc)
+    df["data"] = df["data"].apply(remove_number)
+    df["data"] = df["data"].apply(remove_html)
+    df["data"] = df["data"].apply(remove_url)
+    # df["data"] = df["data"].apply(handling_stopwords)
+    df["data"] = df["data"].apply(lemmatization)
+    df["data"] = df["data"].apply(stemming)
 
     return df
 
@@ -80,8 +98,8 @@ def main():
     train_df = apply_preprocessing(train_df)
     test_df = apply_preprocessing(test_df)
 
-    save_df(save_path, "train_df", train_df)
-    save_df(save_path, "test_df", test_df)
+    save_df(save_path, "train_df.csv", train_df)
+    save_df(save_path, "test_df.csv", test_df)
 
 if __name__ == "__main__":
     main()

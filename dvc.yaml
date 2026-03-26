@@ -1,0 +1,27 @@
+stages:
+  ingest:
+    cmd: python3 src/data_ingestion/ingest.py
+    deps:
+    - data/bbc_data.csv
+    - src/data_ingestion/ingest.py
+    outs:
+    - data/raw
+  preprocess:
+    cmd: python3 src/data_preprocessing/preprocessing.py
+    deps:
+    - data/raw
+    - src/data_preprocessing/preprocessing.py
+    outs:
+    - data/interim
+  feature_engg:
+    cmd: python3 src/feature_engineering/fe.py
+    deps:
+    - data/interim
+    - src/feature_engineering/fe.py
+    outs:
+    - data/external
+  train:
+    cmd: python3 src/models/model_train.py
+    deps:
+    - data/external
+    - src/models/model_train.py
