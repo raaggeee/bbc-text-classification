@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, f1_score
 class TestModel(unittest.TestCase):
 
     @classmethod
-    def init_class(cls):
+    def setUpClass(cls):
         dagshub_token = os.getenv("DAGSHUB_PAT")
         if not dagshub_token:
             raise EnvironmentError("DAGSHUB_PAT not found..")
