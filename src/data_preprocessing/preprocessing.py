@@ -8,6 +8,9 @@ import re
 import yaml
 import os
 import pandas as pd
+import nltk
+nltk.download('wordnet')
+
 
 def open_yaml(file_path):
     with open(file_path, "r") as f:
