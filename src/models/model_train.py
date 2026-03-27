@@ -6,11 +6,19 @@ import pandas as pd
 import mlflow
 import dagshub
 
-mlflow.autolog()
-dagshub.init(repo_owner="raaggeee", repo_name="bbc-text-classification", mlflow=True)
+dagshub_token = os.getenv("DAGSHUB_PAT")
+if not dagshub_token:
+    raise EnvironmentError(f"Couldn't find DAGSHUB PAT")
 
-mlflow.set_tracking_uri("https://dagshub.com/raaggeee/bbc-text-classification.mlflow")
-mlflow.set_experiment("bbc-text_classification")
+os.environ["MLFLOW_TRACKING_USERNAME"] = dagshub_token
+os.environ["MLFLOW_TRACKING_PASSWORD"] = dagshub_token
+
+dagshub_url = "https://dagshub.com"
+repo_owner = "raaggeee"
+repo_name = "bbc-text-classification.mlflow"
+
+mlflow.set_tracking_uri(f"{dagshub_url}/{repo_owner}/{repo_name}")
+
 
 def open_yaml(file_path):
     with open(file_path, "r") as f:
@@ -55,7 +63,7 @@ def main():
         grid_search.fit(X_train, y_train)
         
         for i in range(len(grid_search.cv_results_["params"])):
-            with mlflow.start_run(run_name="Run {i}", nested=True):
+            with mlflow.start_run(run_name=f"Run {i}", nested=True):
                 params=grid_search.cv_results_["params"][i]
                 acc=grid_search.cv_results_["mean_test_score"][i]
                 mlflow.log_param(f"Parameters of {i} run:", params)
