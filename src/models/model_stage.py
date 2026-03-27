@@ -20,5 +20,6 @@ client = MlflowClient()
 
 client.transition_model_version_stage(
     name="Random-Forest-Model",
+    version=6,
     stage="Staging"
 )
