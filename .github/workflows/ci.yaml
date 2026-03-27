@@ -34,3 +34,9 @@ jobs:
           DAGSHUB_PAT: ${{ secrets.DAGSHUB_PAT }}
         run: |
           python3 src/models/model_stage.py
+
+      - name: Test Model
+        env: 
+          DAGSHUB_PAT: ${{ secrets.DAGSHUB_PAT }}
+        run: |
+          python3 tests/test_model.py
