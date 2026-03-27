@@ -31,6 +31,6 @@ jobs:
 
       - name: Stage Model
         env:
-          DAGSHUB_PAT:${{ secrets.DAGSHUB_PAT }}
+          DAGSHUB_PAT: ${{ secrets.DAGSHUB_PAT }}
         run: |
           python3 src/models/model_stage.py
