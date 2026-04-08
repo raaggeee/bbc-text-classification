@@ -67,7 +67,7 @@ def main():
 
     grid_search = GridSearchCV(estimator=rf, param_grid=params_grids, cv=5, n_jobs=1, verbose=2)
 
-    with mlflow.start_run(run_name="test-1"):
+    with mlflow.start_run(run_name="rf-hyperparams"):
         grid_search.fit(X_train, y_train)
         
         for i in range(len(grid_search.cv_results_["params"])):
