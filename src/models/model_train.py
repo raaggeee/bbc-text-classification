@@ -91,6 +91,8 @@ def main():
         with open("model.pkl", "wb") as f:
             pickle.dump(xgb, f)
 
+        mlflow.log_artifact("model.pkl")
+
 
 if __name__ == "__main__":
     main()
