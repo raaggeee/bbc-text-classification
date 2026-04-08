@@ -8,6 +8,8 @@ from sklearn.metrics import accuracy_score, f1_score, recall_score, precision_sc
 import seaborn as sns
 import matplotlib.pyplot as plt
 from dotenv import load_dotenv
+from sklearn.model_selection import GridSearchCV
+
 load_dotenv()
 
 dagshub_token = os.getenv("DAGSHUB_PAT")
@@ -56,22 +58,43 @@ def main():
     y_train = train_df.iloc[:, -1]
 
     xgb = XGBClassifier()
+    params = {
+        "booster": ["gbtree", "gblinear"],
+        "max_depth": [2, 6, 10, 15, 20],
+        "min_child_weight": [1, 4, 9, 10, 15, 20],
+        "subsample": [0.2, 0.5, 0.7, 1],
+    }
 
-    with mlflow.start_run(run_name="xgb-normal"):
-        xgb.fit(X_train, y_train)
+    grid_search = GridSearchCV(estimator=xgb, param_grid=params, cv=5, n_jobs=5, verbose=2)
+
+    with mlflow.start_run(run_name="xgb-hyperparam"):
+        grid_search.fit(X_train, y_train)
+
+        for i in range(len(grid_search.cv_results_["params"])):
+            with mlflow.start_run(run_name=f"xgb-hyperparam-{i+1}", nested=True):
+                params = grid_search.cv_results_["params"][i]
+                acc = grid_search.cv_results_["mean_test_score"][i]
+                mlflow.log_param(f"Parameters of {i} Run", params)
+                mlflow.log_metric(f"Accuracy of {i} Run", acc)
+
+        best_params = grid_search.best_params_
+        best_acc = grid_search.best_score_
+
+        mlflow.log_param(f"Best Parameters", best_params)
+        mlflow.log_metric(f"Best Accuracy", best_acc)
 
         mlflow.log_input(mlflow.data.from_pandas(train_df), "Training Data")
 
         mlflow.log_artifact(__file__)
 
-        mlflow.set_tag("model", "Random Forest")
-        mlflow.set_tag("cv", "Grid Search CV")
-        mlflow.set_tag("description", "XGBoost Classifier without Hyperparameter Tuning")
+        mlflow.set_tag("model", "XGBoost")
+        mlflow.set_tag("cv", "GridSearch CV")
+        mlflow.set_tag("description", "XGBoost Classifier with Hyperparameter Tuning")
 
         #model test
         X_test = test_df.iloc[:, :-1]
         y_test = test_df.iloc[:, -1]
-        y_pred = xgb.predict(X_test)
+        y_pred = grid_search.predict(X_test)
 
         accuracy = accuracy_score(y_test, y_pred)
         precision = precision_score(y_test, y_pred, average="weighted")

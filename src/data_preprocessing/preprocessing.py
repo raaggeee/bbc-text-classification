@@ -81,7 +81,6 @@ def apply_preprocessing(df):
     df["data"] = df["data"].apply(remove_url)
     # df["data"] = df["data"].apply(handling_stopwords)
     df["data"] = df["data"].apply(lemmatization)
-    df["data"] = df["data"].apply(stemming)
 
     return df
 
