@@ -1,11 +1,14 @@
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import GridSearchCV
 import yaml
 import os
 import pandas as pd
 import mlflow
-import dagshub
 import pickle
+from xgboost import XGBClassifier
+from sklearn.metrics import accuracy_score, f1_score, recall_score, precision_score, confusion_matrix
+import seaborn as sns
+import matplotlib.pyplot as plt
+from dotenv import load_dotenv
+load_dotenv()
 
 dagshub_token = os.getenv("DAGSHUB_PAT")
 if not dagshub_token:
@@ -52,30 +55,10 @@ def main():
     X_train = train_df.iloc[:, :-1]
     y_train = train_df.iloc[:, -1]
 
-    params_grids = {
-        "n_estimators": [5, 10, 20, 30, 50, 100],
-        "max_depth": [10, 20, 30, 40, 50, 100]
-    }
+    xgb = XGBClassifier()
 
-    rf = RandomForestClassifier()
-
-    grid_search = GridSearchCV(estimator=rf, param_grid=params_grids, cv=5, n_jobs=1, verbose=2)
-
-    with mlflow.start_run(run_name="test-1"):
-        grid_search.fit(X_train, y_train)
-        
-        for i in range(len(grid_search.cv_results_["params"])):
-            with mlflow.start_run(run_name=f"Run {i}", nested=True):
-                params=grid_search.cv_results_["params"][i]
-                acc=grid_search.cv_results_["mean_test_score"][i]
-                mlflow.log_param(f"Parameters of {i} run:", params)
-                mlflow.log_metric(f"Accuracy of {i} run:", acc)
-
-        best_params = grid_search.best_params_
-        best_acc = grid_search.best_score_
-
-        mlflow.log_param(f"Best Parameters", best_params)
-        mlflow.log_metric(f"Best Accuracy", best_acc)
+    with mlflow.start_run(run_name="xgb-normal"):
+        xgb.fit(X_train, y_train)
 
         mlflow.log_input(mlflow.data.from_pandas(train_df), "Training Data")
 
@@ -83,11 +66,30 @@ def main():
 
         mlflow.set_tag("model", "Random Forest")
         mlflow.set_tag("cv", "Grid Search CV")
+        mlflow.set_tag("description", "XGBoost Classifier without Hyperparameter Tuning")
 
-        mlflow.sklearn.log_model(grid_search.best_estimator_, name="Random Forest w CV", registered_model_name="Random-Forest-Model")
+        #model test
+        X_test = test_df.iloc[:, :-1]
+        y_test = test_df.iloc[:, -1]
+        y_pred = xgb.predict(X_test)
+
+        accuracy = accuracy_score(y_test, y_pred)
+        precision = precision_score(y_test, y_pred, average="weighted")
+        recall = recall_score(y_test, y_pred, average="weighted")
+        f1 = f1_score(y_test, y_pred, average="weighted")
+
+        mlflow.log_metric(f"Accuracy on Test", accuracy)
+        mlflow.log_metric(f"Precision on Test", precision)
+        mlflow.log_metric(f"Recall on Test", recall)
+        mlflow.log_metric(f"F1 on Test", f1)
+
+        confusion = confusion_matrix(y_test, y_pred)
+        sns.heatmap(confusion, annot=True,fmt=".2g")
+        plt.savefig("metrics/confusion_matrix.png")
+        mlflow.log_artifact("metrics/confusion_matrix.png")
 
         with open("model.pkl", "wb") as f:
-            pickle.dump(rf, f)
+            pickle.dump(xgb, f)
 
 
 if __name__ == "__main__":

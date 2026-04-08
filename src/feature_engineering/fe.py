@@ -5,6 +5,13 @@ import yaml
 import os
 import pandas as pd
 
+"""
+Checklist
+[] - Apply PCA (check which is better)
+[] - Apply LDA (check which is better)
+[] - 
+"""
+
 def open_yaml(file_path):
     with open(file_path, "r") as f:
         yaml_file = yaml.safe_load(f)
