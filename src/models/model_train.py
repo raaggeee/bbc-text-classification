@@ -5,6 +5,7 @@ import os
 import pandas as pd
 import mlflow
 import dagshub
+import pickle
 
 dagshub_token = os.getenv("DAGSHUB_PAT")
 if not dagshub_token:
@@ -46,6 +47,7 @@ def main():
     data_path = get_yaml_content(yaml_file)
 
     train_df = open_df(os.path.join(data_path, "train_df.csv"))
+    test_df = open_df(os.path.join(data_path, "test_df.csv"))
 
     X_train = train_df.iloc[:, :-1]
     y_train = train_df.iloc[:, -1]
@@ -83,6 +85,10 @@ def main():
         mlflow.set_tag("cv", "Grid Search CV")
 
         mlflow.sklearn.log_model(grid_search.best_estimator_, name="Random Forest w CV", registered_model_name="Random-Forest-Model")
+
+        with open("model.pkl", "wb") as f:
+            pickle.dump(rf, f)
+
 
 if __name__ == "__main__":
     main()
