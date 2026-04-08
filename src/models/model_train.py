@@ -4,8 +4,12 @@ import yaml
 import os
 import pandas as pd
 import mlflow
-import dagshub
 import pickle
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
+import seaborn as sns
+import matplotlib.pyplot as plt
+from dotenv import load_dotenv
+load_dotenv()
 
 dagshub_token = os.getenv("DAGSHUB_PAT")
 if not dagshub_token:
@@ -53,8 +57,10 @@ def main():
     y_train = train_df.iloc[:, -1]
 
     params_grids = {
-        "n_estimators": [5, 10, 20, 30, 50, 100],
-        "max_depth": [10, 20, 30, 40, 50, 100]
+        "n_estimators": [100, 150, 200, 250, 300],
+        "max_depth": [10, 20, 30, 40, 50, 100],
+        "min_samples_split": [2, 4, 10, 30, 50]
+
     }
 
     rf = RandomForestClassifier()
@@ -88,6 +94,28 @@ def main():
 
         with open("model.pkl", "wb") as f:
             pickle.dump(rf, f)
+
+        #test model
+        X_test = test_df.iloc[:, :-1]
+        y_test = test_df.iloc[:, -1]
+        y_pred = grid_search.predict(X_test)
+
+        accuracy = accuracy_score(y_test, y_pred)
+        precision = precision_score(y_test, y_pred)
+        recall = recall_score(y_test, y_pred)
+        f1 = f1_score(y_test, y_pred)
+        confusion = confusion_matrix(y_test, y_pred)
+
+        mlflow.log_metric("Accuracy on Test", accuracy)
+        mlflow.log_metric("Precision on Test", precision)
+        mlflow.log_metric("Recall on Test", recall)
+        mlflow.log_metric("F1 on Test", f1)
+
+        sns.heatmap(confusion, annot=True, fmt=".2g")
+        plt.savefig("metrics/confusion_matrix.png")
+
+        mlflow.log_artifact("metrics/confusion_matrix.png")
+        mlflow.log_artifact("model.pkg")
 
 
 if __name__ == "__main__":
