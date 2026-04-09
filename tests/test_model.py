@@ -31,7 +31,7 @@ class TestModel(unittest.TestCase):
     @staticmethod
     def get_latest_model(model_name, stage="Staging"):
         client = mlflow.MlflowClient()
-        latest_version = client.get_latest_versions(model_name, stage=[stage])
+        latest_version = client.get_latest_versions(model_name, stages=[stage])
         return latest_version[0].version
 
     def test_model_performance(self):

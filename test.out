@@ -1,0 +1,1087 @@
+nohup: ignoring input
+Stage 'ingest' didn't change, skipping
+Stage 'preprocess' didn't change, skipping
+Stage 'feature_engg' didn't change, skipping
+Running stage 'train':
+> python3 src/models/model_train.py
+Fitting 5 folds for each of 150 candidates, totalling 750 fits
+[CV] END max_depth=10, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=150; total time=   0.7s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=150; total time=   0.7s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=150; total time=   0.7s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=150; total time=   0.7s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=150; total time=   0.7s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=200; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=200; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=200; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=200; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=200; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=250; total time=   1.1s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=250; total time=   1.1s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=250; total time=   1.1s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=250; total time=   1.1s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=250; total time=   1.1s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=300; total time=   1.4s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=300; total time=   1.4s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=300; total time=   1.4s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=300; total time=   1.4s
+[CV] END max_depth=10, min_samples_split=2, n_estimators=300; total time=   1.4s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=200; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=200; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=200; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=200; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=200; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=250; total time=   1.1s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=250; total time=   1.1s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=250; total time=   1.1s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=250; total time=   1.1s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=300; total time=   1.4s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=300; total time=   1.4s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=300; total time=   1.3s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=300; total time=   1.4s
+[CV] END max_depth=10, min_samples_split=4, n_estimators=300; total time=   1.4s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=100; total time=   0.4s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=100; total time=   0.4s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=100; total time=   0.4s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=100; total time=   0.4s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=100; total time=   0.4s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=250; total time=   1.1s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=250; total time=   1.1s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=250; total time=   1.1s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=250; total time=   1.1s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=250; total time=   1.1s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=300; total time=   1.3s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=300; total time=   1.3s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=300; total time=   1.3s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=300; total time=   1.3s
+[CV] END max_depth=10, min_samples_split=10, n_estimators=300; total time=   1.3s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=200; total time=   0.8s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=200; total time=   0.8s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=200; total time=   0.8s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=200; total time=   0.8s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=200; total time=   0.8s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=250; total time=   1.0s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=250; total time=   1.0s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=250; total time=   1.0s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=250; total time=   1.0s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=250; total time=   1.0s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=300; total time=   1.2s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=300; total time=   1.2s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=300; total time=   1.2s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=300; total time=   1.2s
+[CV] END max_depth=10, min_samples_split=30, n_estimators=300; total time=   1.2s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=250; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=250; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=250; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=250; total time=   0.9s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=300; total time=   1.1s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=300; total time=   1.1s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=300; total time=   1.1s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=300; total time=   1.1s
+[CV] END max_depth=10, min_samples_split=50, n_estimators=300; total time=   1.1s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=150; total time=   0.7s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=20, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=20, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=200; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=200; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=200; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=200; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=200; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=20, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=200; total time=   0.9s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=200; total time=   0.9s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=200; total time=   0.8s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=200; total time=   0.9s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=200; total time=   0.8s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=20, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=300; total time=   1.3s
+[CV] END max_depth=20, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=150; total time=   0.7s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=250; total time=   1.2s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=250; total time=   1.2s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=30, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=150; total time=   0.8s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=30, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=200; total time=   1.0s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=30, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=200; total time=   0.9s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=200; total time=   0.9s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=200; total time=   0.9s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=200; total time=   0.9s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=200; total time=   0.9s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=30, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=30, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=40, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=40, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=200; total time=   1.0s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=40, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=200; total time=   0.9s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=200; total time=   0.9s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=200; total time=   0.8s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=200; total time=   0.8s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=200; total time=   0.9s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=250; total time=   1.2s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=40, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=40, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=50, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=150; total time=   0.8s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=50, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=200; total time=   1.0s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=300; total time=   1.5s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=300; total time=   1.5s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=300; total time=   1.5s
+[CV] END max_depth=50, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=200; total time=   0.9s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=200; total time=   0.8s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=200; total time=   0.8s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=200; total time=   0.8s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=200; total time=   0.8s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=250; total time=   1.0s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=50, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=50, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=100; total time=   0.5s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=150; total time=   0.7s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=150; total time=   0.8s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=150; total time=   0.7s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=150; total time=   0.7s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=200; total time=   1.0s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=250; total time=   1.2s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=250; total time=   1.3s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=250; total time=   1.2s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=100, min_samples_split=2, n_estimators=300; total time=   1.5s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=100; total time=   0.5s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=150; total time=   0.7s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=200; total time=   1.0s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=250; total time=   1.2s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=100, min_samples_split=4, n_estimators=300; total time=   1.5s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=100; total time=   0.5s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=150; total time=   0.7s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=200; total time=   1.0s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=200; total time=   0.9s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=250; total time=   1.2s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=100, min_samples_split=10, n_estimators=300; total time=   1.4s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=100; total time=   0.4s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=150; total time=   0.6s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=200; total time=   0.9s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=200; total time=   0.8s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=200; total time=   0.8s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=200; total time=   0.8s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=200; total time=   0.8s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=250; total time=   1.1s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=100, min_samples_split=30, n_estimators=300; total time=   1.3s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=100; total time=   0.4s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=150; total time=   0.6s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=200; total time=   0.8s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=250; total time=   1.0s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=300; total time=   1.2s
+[CV] END max_depth=100, min_samples_split=50, n_estimators=300; total time=   1.2s
+🏃 View run Run 0 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/9eadbd5dfe1840eea15d0a712b79cfa5
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 1 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/5ecf9f8af1844bc09251b21a17173095
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 2 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/9b8613ba09444574b26b9b95d90af28a
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 3 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/6d1eb61b503e4a778ca8d72adf95820e
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 4 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/8ffe51cf801e46b49caaed71b8fec91f
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 5 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/af34236a3a8a48c6982811291622dfdb
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 6 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/403f0291a25b45b8aebdbe088bfa22c1
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 7 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/f9a6e9a5f85847dc8a6668503e7637da
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 8 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/85c17a2a4e834a0f9ef3e0f1d51b4cf0
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 9 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/7c9215b3b8634c598c4a5ff6f833ce3c
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 10 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/a3edc4e4772d41e18ae793e93cbf29a9
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 11 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/523e7af20e7c40af9d95e5f5b19d7587
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 12 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/56340d30cb924c1d8dbefc043513532b
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 13 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/eb13e8b44e714a708221634e8923dc13
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 14 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/77468ee5198f4712ae8136b45d08b00c
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 15 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/d78d836b85184fdc81b34b5a799d7383
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 16 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/5212a82d3dd242a1be20aa17efb1728e
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 17 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/61d47578e8804dbc95115ee7510a7310
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 18 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/b606ff7778944b81bc5997ad01330b98
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 19 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/04ba346a8c274a3aa9b83d34d9d5516f
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 20 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/1c2bdaab989f4ecfaa790a2aaa516e6e
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 21 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/ad4a53ad66df42918637cbd73415443d
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 22 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/55be073f8b50408d8ccbc581607e58b4
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 23 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/f562530050ff4e42857d75dc36660410
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 24 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/56b9941d189f4c469a1c4c8235e371ea
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 25 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/503b623a5647408a83aa5fdb7c3c6be7
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 26 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/dda742820cb34f4fa9c3a54847453859
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 27 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/5109784dedda454aa56ede25b6c8680d
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 28 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/ca46e63e63304130afafde184817a044
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 29 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/6894b6d7bb0d424bafc5292c5918a305
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 30 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/29158862103343e3a55619fe35b06f91
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 31 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/57190eeb5f7443bb9db052668b73224d
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 32 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/2a3a2f2d01004c01a803e8dd7d908155
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 33 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/adbc7d370e8f48f98428b5b5ba855ab1
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 34 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/237eeed0d0644c36becd5d4559ffb4e9
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 35 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/e7aab3ae674648e6993c6e7b972eebf7
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 36 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/bf304e61d1f141ce893fcde957cd4992
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 37 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/66eae8619e8646a3bc8f3297c5c4441e
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 38 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/061246d5c6834e3a93161637649d1866
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 39 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/9dc301ed9f2148f897a03906549c62de
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 40 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/a35a6984a64d4c2ca685a930c82991a2
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 41 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/b441d74f7b674ba7b213fe61a805c2ba
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 42 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/e4446e39f4544afc8033d1a2b0f1a754
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 43 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/4ef005217e4f4249bfa3bad13eeb03af
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 44 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/e2927f31b8d14f2282ac1f848a4e2102
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 45 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/276fa57c128f4ca881271eae0e8caf63
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 46 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/b24ed1fc03504aa6bfd2e56ad44a789d
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 47 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/cb9d019d4d7e4ecd8ae2a2efbab42e8c
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 48 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/a2306473394244148896258d062fa960
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 49 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/6458528030b24c19aa66678a77fa4dcd
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 50 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/2ae6b68533c54b349f9c66f72d61f470
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 51 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/6a670e1d223340d1b487d1879cfc667d
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 52 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/4457aee8fabb4199b35253d4580d3549
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 53 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/afb3b800bb3e4feea235d5d7fdc6f6af
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 54 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/73951add4f4d4b36921931397e4d3382
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 55 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/583e3c4faf8e42d7879ecfc513929bbf
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 56 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/696b29c9345749348aeec46911524b64
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 57 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/38603142fcf447c38739a203af5854bd
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 58 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/b5343e66de674d16a3527ec5973cb0b3
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 59 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/99d79cb2aa6043fc90bd175851a4f815
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 60 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/271e47ad2d564f5387999132ce0c1cd4
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 61 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/edac22fdd307486c9a10e7e8ac17ab34
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 62 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/d75a9e7af68a426c801ec2778288597e
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 63 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/06acbaac990c44e08bc6a6705583429c
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 64 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/769b88b5a4c64c5ba422d054d47f3f4b
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 65 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/37c81e57b19643daa1e5c0efc0399b87
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 66 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/6a24e9ab901f4800ba07534b2686c3ff
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 67 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/54fd8d18b9314b53a67044e7b4f0576f
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 68 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/9387ee34a99548108887485ec96cb857
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 69 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/b66fb99cd5ef46b1b5809aabb85daa98
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 70 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/0ab6798ce2f04431a35c77705a46579e
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 71 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/725792cb52dd41faa40d7a4cf81b141f
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 72 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/3ea1b6cc8e514ee2bb247b57933177cb
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 73 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/a984c347ee94493baf655022edd5538e
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 74 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/01b2ff24c1ae4a138b1ae15a905fb16f
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 75 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/ef18a02c54664fe1bc718d67f504311d
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 76 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/c600dee2410644f0a09e336ffa436d79
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 77 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/659ea28cf53942ffa6bc247019fcce7b
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 78 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/2e37ca339bd14c409dd754fc7495d550
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 79 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/0b08ef2546eb488286ecfa7059411044
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 80 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/50ae97dc9d9444608fec304283897d7d
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 81 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/fc9dfde9859d4069802e3714d3d9c57f
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 82 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/cb970fad64e844d4a2760dfdf07328cf
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 83 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/ce0f783bca454ff99cae6ef17bbea2c8
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 84 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/1aafaceb13004d90929cc1ec2b36bd03
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 85 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/6334e6ca923a48b68d268c1c9abb4033
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 86 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/454ba6901af045be9860f91c3c98cb04
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 87 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/0958a13d9c36459e870d8a9ea1a3b238
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 88 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/0781d412bf7d425c9b8d365ad1bbe3e0
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 89 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/b030335d202649af8c8b0bbc3ef37caf
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 90 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/0201b4938f8a407a817192e18a717a13
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 91 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/0888f403165a4fb5a0f4eded1215efff
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 92 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/2c1f6c1733414de295c50b75aebde371
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 93 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/472325a9b74f4fd2aa57aa4f4ab0d757
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 94 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/4bcf56dc18f84dc3b1f73b4c8b0aba0a
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 95 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/4030b15e34a4402391c100148880670f
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 96 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/fea91687dfa64adda81b73980ce93b8f
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 97 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/f360ae526d8747858fcf26b437e17ecc
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 98 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/113222ad0cc04b05924c8e37a264d34c
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 99 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/97c5b9658af8464cafa9362c495c8461
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 100 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/978a8a954a294feab8ef5972676b9f4f
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 101 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/5247d8864ec54ccaa6a2870c771086d3
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 102 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/9dce7319fc6a4dc2a63f9946504339d7
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 103 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/fdc6959f0dba434182fc663e0d476d73
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 104 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/dff45beae8c24735ad5aa02f6765fd68
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 105 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/f5e38cfe812348219ab9c7c6ea5158aa
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 106 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/d2a4b60478fa47c9a7a60ac171dbbc6a
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 107 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/c266806772ba413387f7fb455550d33a
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 108 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/013effa4b7684b99be68638220d18fa4
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 109 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/239ea7070e2d47bfb8b48a9e42aea660
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 110 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/867cd5f63132490d93850768232f939b
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 111 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/0ebad501737645cdbd5ecc8c382e89cb
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 112 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/1a13a1cc76e543929c7b1b718f18f5d5
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 113 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/eeed4a13d4f14a7cb329c5998aa23bd8
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 114 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/ed647ffa488b444e928fb098ea687425
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 115 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/937331ee8ce646138a84b41815b77c3b
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 116 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/404f6ffabf544223bec1e88ba626bb8b
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 117 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/216b3eb183834d0eab752308074a6d4d
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+/data2/bbc-text-classification/.venv/lib/python3.12/site-packages/mlflow/types/utils.py:452: UserWarning: Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever these columns may have missing values. See `Handling Integers With Missing Values <https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+2026/04/08 23:49:20 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+Registered model 'Random-Forest-Model' already exists. Creating a new version of this model...
+2026/04/08 23:49:37 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: Random-Forest-Model, version 10
+Created version '10' of model 'Random-Forest-Model'.
+🏃 View run Run 118 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/85874ea45be045f4abd1e6b5e03b0b6f
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 119 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/5450959c914e41d2882b0e95809c6af4
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 120 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/1b27066774ea4cfbaacba676ebd71660
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 121 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/cb56903c7e9f487ab4b32057d20615f8
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 122 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/d42c91fa00d14d638e326b5f02a875d7
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 123 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/6f966ac6ce5e4ff983246bcdb05153d7
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 124 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/61f9c34a069c422099e8d26552de6b41
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 125 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/1ca911a06e954d23a4e984ddda8ea6a6
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 126 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/291dfcaaacc5432c8d7193f636d3919c
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 127 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/b02c47544f9143f290fc903c43ff0102
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 128 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/500fafb037c943bb8bb3f0f885706740
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 129 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/100c5212e4f343c4b076606ea5c21e43
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 130 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/ca019160b6b846a19b733f2155e74841
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 131 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/227a7ee8db3a4ae0a7261df71c559482
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 132 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/9c715df195054767a5361ac5a6bae4c8
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 133 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/2b38b1aa7b604f68b86ea4af7d62e5c7
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 134 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/af3175905c0746f5add7ed795c26a98f
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 135 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/c9601ece0fe0460cb3b795abacb594da
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 136 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/182acfbf2f7b4514b61ce49c7a5aa61d
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 137 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/d7d3350a4d8f41faad814776f8e585c5
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 138 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/f60c8d5e8d1b455587ba9dbd0ba94e48
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 139 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/8946d5076fb149c2a19cf12a0cd53eed
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 140 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/f6354c6356de48ffb9809f167b1e3270
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 141 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/81079549f612463abb7ed81b2d67c474
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 142 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/a1e80c2154714ba9b74cccbed90ae341
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 143 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/3202d4b91bb44fbfbb30573d8a083e4b
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 144 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/f204e3c850f849cb8172658cd6e5dc33
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 145 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/f952ff35f0da424597605a0948c4812f
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 146 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/2f90cc79c4284c50810e5ff83d8b742d
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 147 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/b279d459a30349d4a0b84212f80242fd
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 148 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/fdd1547710184ce28693ec9ba20ea329
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run Run 149 at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/a4bfaed6c5544706a3d1d106b49a4cf4
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+🏃 View run rf-hyperparams at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0/runs/c76b2c7b6f974120b4ba607b5d7fdffb
+🧪 View experiment at: https://dagshub.com/raaggeee/bbc-text-classification.mlflow/#/experiments/0
+Traceback (most recent call last):
+  File "/data2/bbc-text-classification/src/models/model_train.py", line 122, in <module>
+    main()
+  File "/data2/bbc-text-classification/src/models/model_train.py", line 104, in main
+    precision = precision_score(y_test, y_pred)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/bbc-text-classification/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/bbc-text-classification/.venv/lib/python3.12/site-packages/sklearn/metrics/_classification.py", line 2634, in precision_score
+    p, _, _, _ = precision_recall_fscore_support(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/bbc-text-classification/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 191, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/bbc-text-classification/.venv/lib/python3.12/site-packages/sklearn/metrics/_classification.py", line 2100, in precision_recall_fscore_support
+    labels = _check_set_wise_labels(y_true, y_pred, average, labels, pos_label)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data2/bbc-text-classification/.venv/lib/python3.12/site-packages/sklearn/metrics/_classification.py", line 1881, in _check_set_wise_labels
+    raise ValueError(
+ValueError: Target is multiclass but average='binary'. Please choose another average setting, one of [None, 'micro', 'macro', 'weighted'].
+ERROR: failed to reproduce 'train': failed to run: python3 src/models/model_train.py, exited with 1
