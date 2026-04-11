@@ -6,6 +6,8 @@ import pandas as pd
 import mlflow
 import dagshub
 import pickle
+from dotenv import load_dotenv
+load_dotenv()
 
 dagshub_token = os.getenv("DAGSHUB_PAT")
 if not dagshub_token:
@@ -53,8 +55,8 @@ def main():
     y_train = train_df.iloc[:, -1]
 
     params_grids = {
-        "n_estimators": [5, 10, 20, 30, 50, 100],
-        "max_depth": [10, 20, 30, 40, 50, 100]
+        "n_estimators": [5, 10, 20],
+        "max_depth": [10, 20, 30]
     }
 
     rf = RandomForestClassifier()

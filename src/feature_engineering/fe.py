@@ -50,10 +50,10 @@ def apply_feature_engineering(train_df, test_df):
     test_vectorized["label"] = y_test
 
     with open("serve/vectorizer.pkl", "wb") as f:
-        pickle.load(tfidf, f)
+        pickle.dump(tfidf, f)
 
-    with open("serve/encoder.pkl", "wb") as f:
-        pickle.load(label, f)
+    with open("serve/encoder.pkl", "wb") as f2:
+        pickle.dump(label, f2)
     
     return train_vectorized, test_vectorized
 
