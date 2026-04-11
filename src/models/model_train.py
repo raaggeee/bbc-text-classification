@@ -52,42 +52,19 @@ def main():
     X_train = train_df.iloc[:, :-1]
     y_train = train_df.iloc[:, -1]
 
-    params_grids = {
-        "n_estimators": [5, 10, 20, 30, 50, 100],
-        "max_depth": [10, 20, 30, 40, 50, 100]
-    }
-
     rf = RandomForestClassifier()
 
-    grid_search = GridSearchCV(estimator=rf, param_grid=params_grids, cv=5, n_jobs=1, verbose=2)
+    mlflow.log_input(mlflow.data.from_pandas(train_df), "Training Data")
 
-    with mlflow.start_run(run_name="test-1"):
-        grid_search.fit(X_train, y_train)
-        
-        for i in range(len(grid_search.cv_results_["params"])):
-            with mlflow.start_run(run_name=f"Run {i}", nested=True):
-                params=grid_search.cv_results_["params"][i]
-                acc=grid_search.cv_results_["mean_test_score"][i]
-                mlflow.log_param(f"Parameters of {i} run:", params)
-                mlflow.log_metric(f"Accuracy of {i} run:", acc)
+    mlflow.log_artifact(__file__)
 
-        best_params = grid_search.best_params_
-        best_acc = grid_search.best_score_
+    mlflow.set_tag("model", "Random Forest")
+    mlflow.set_tag("cv", "Grid Search CV")
 
-        mlflow.log_param(f"Best Parameters", best_params)
-        mlflow.log_metric(f"Best Accuracy", best_acc)
+    mlflow.sklearn.log_model(rf.get_params, name="Random Forest w CV", registered_model_name="Random-Forest-Model")
 
-        mlflow.log_input(mlflow.data.from_pandas(train_df), "Training Data")
-
-        mlflow.log_artifact(__file__)
-
-        mlflow.set_tag("model", "Random Forest")
-        mlflow.set_tag("cv", "Grid Search CV")
-
-        mlflow.sklearn.log_model(grid_search.best_estimator_, name="Random Forest w CV", registered_model_name="Random-Forest-Model")
-
-        with open("model.pkl", "wb") as f:
-            pickle.dump(rf, f)
+    with open("model.pkl", "wb") as f:
+        pickle.dump(rf, f)
 
 
 if __name__ == "__main__":
