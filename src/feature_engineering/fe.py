@@ -4,6 +4,7 @@ from sklearn.preprocessing import LabelEncoder
 import yaml
 import os
 import pandas as pd
+import pickle
 
 def open_yaml(file_path):
     with open(file_path, "r") as f:
@@ -42,13 +43,17 @@ def apply_feature_engineering(train_df, test_df):
     print(X_train.shape)
     X_test = tfidf.transform(X_test)
 
-
-
     train_vectorized = pd.DataFrame(X_train.toarray())
     print(train_vectorized.shape)
-    train_vectorized["label"] = label.fit_transform(y_train)
+    train_vectorized["label"] = y_train
     test_vectorized = pd.DataFrame(X_test.toarray())
-    test_vectorized["label"] = label.fit_transform(y_test)
+    test_vectorized["label"] = y_test
+
+    with open("serve/vectorizer.pkl", "wb") as f:
+        pickle.load(tfidf, f)
+
+    with open("serve/encoder.pkl", "wb") as f:
+        pickle.load(label, f)
     
     return train_vectorized, test_vectorized
 
