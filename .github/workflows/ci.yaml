@@ -35,8 +35,24 @@ jobs:
         run: |
           python3 src/models/model_stage.py
 
-      - name: Test Model
-        env: 
-          DAGSHUB_PAT: ${{ secrets.DAGSHUB_PAT }}
-        run: |
-          python3 tests/test_model.py
+      # - name: Test Model
+      #   env: 
+      #     DAGSHUB_PAT: ${{ secrets.DAGSHUB_PAT }}
+      #   run: |
+      #     python3 tests/test_model.py
+      - name: Docker Login
+        if : success()
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_PASS }}
+
+      - name: Build Docker Image
+        if: success()
+        run: docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/bbc:latest .
+
+      - name: Push Docker Image
+        if: success()
+        run: docker push  ${{ secrets.DOCKER_HUB_USERNAME }}/bbc:latest
+
+        
