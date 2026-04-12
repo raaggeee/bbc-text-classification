@@ -5,6 +5,7 @@ WORKDIR /app
 COPY serve/ /app/
 
 RUN pip install -r requirements.txt
+RUN pip install uvicorn
 
 EXPOSE 8080
 
